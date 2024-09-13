@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Football Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for contributing in this survey. Please feel free to answer.</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name </label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email </label>
+          <input id="email" type="email" name="email" placeholder="Enter your email"  class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional) </label>
+          <input id="number" type="number" name="number" placeholder="Input your age" min="13" max="99" class="form-control">
+        </div>
+        <div class="form-group">
+          <label id="team-label" for="dropdown">What's your favourite team?</label>
+          <select id="dropdown" type="text" name="team" class="form-control" required>
+            <option disabled selected value>Select favourite team</option>
+            <option value="BC">Bristol City</option>
+            <option value="Arsenal">Arsenal</option>
+            <option value="Real">Real Madrid</option>
+            <option value="Inter">Inter Milan</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Will you willing to pay for legal football streaming platforms?</p>
+          <label>
+            <input name="pay" type="radio" value="yes" class="input-radio" checked>Yes
+          </label>
+          <label>
+            <input name="pay" type="radio" value="no" class="input-radio">No
+          </label>
+          <label>
+            <input name="pay" type="radio" value="uncertain" class="input-radio">Uncertain
+          </label>        
+        </div>
+        <div class="form-group">
+          <label id="team-label" for="dropdown">What is your favourite league in Europe?</label>
+          <select id="dropdown" type="text" name="team" class="form-control" required>
+            <option disabled selected value>Select favourite league</option>
+            <option value="EPL">Premier League</option>
+            <option value="LL">LALIGA EA SPORTS</option>
+            <option value="SAE">Serie A enilive</option>
+            <option value="BUN">Bundesliga</option>
+            <option value="L1">Ligue 1 McDonalds</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What do you consider when choosing a favourite team? (Choose all that apply)</p>
+          <label><input id="name" type="checkbox" value="managers" class="input-checkbox">Managers</label>
+          <label><input id="name" type="checkbox" value="players" class="input-checkbox">Players</label>
+          <label><input id="name" type="checkbox" value="trophies" class="input-checkbox">Trophies</label>
+          <label><input id="name" type="checkbox" value="popularity" class="input-checkbox">Popularity</label>
+          <label><input id="name" type="checkbox" value="strength" class="input-checkbox">Strength</label>
+          <label><input id="name" type="checkbox" value="preference" class="input-checkbox">Preference</label>     
+        </div>
+        <div class="form-group">
+          <p>If you can say something to your favorite team, what would it be?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
