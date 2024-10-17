@@ -131,7 +131,7 @@ form {
   display: block;
   width: 90%;
   height: 2rem;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.375rem;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
