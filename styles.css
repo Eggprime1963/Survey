@@ -112,7 +112,7 @@ button {
 
 form {
   background: var(--color-darkblue-alpha);
-  padding: 2.5rem 0.625rem;
+  padding: 2.5rem 2.5rem;
   border-radius: 0.25rem;
 }
 
